@@ -4,8 +4,13 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { IconCheck, IconLoader2, IconX } from "@tabler/icons-react";
+import { cn } from "@/lib/utils";
 
-export const WaitlistForm = () => {
+interface WaitlistFormProps {
+  className?: string;
+}
+
+export const WaitlistForm = ({ className }: WaitlistFormProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [email, setEmail] = useState("");
@@ -41,7 +46,10 @@ export const WaitlistForm = () => {
     <>
       <Button 
         onClick={() => setIsOpen(true)}
-        className="bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:from-amber-600 hover:to-amber-700 transition-all duration-300 shadow-md hover:shadow-lg"
+        className={cn(
+          "bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:from-amber-600 hover:to-amber-700 transition-all duration-300 shadow-md hover:shadow-lg",
+          className
+        )}
       >
         Sıraya Katıl
       </Button>

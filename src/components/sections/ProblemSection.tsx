@@ -70,39 +70,42 @@ const businessProblems = [
 
 const ProblemSection = () => {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="py-12 sm:py-16 md:py-24 bg-white relative overflow-hidden">
       {/* Decorative elements */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#f1f1f1_1px,transparent_1px),linear-gradient(to_bottom,#f1f1f1_1px,transparent_1px)] bg-[size:24px_24px]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#f1f1f1_1px,transparent_1px),linear-gradient(to_bottom,#f1f1f1_1px,transparent_1px)] bg-[size:24px_24px] opacity-50" />
       
       <motion.div 
-        className="container mx-auto px-4 relative"
+        className="container mx-auto px-4 sm:px-6 relative"
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
         variants={staggerContainer}
       >
-        <motion.div variants={fadeInUp} className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-600">
+        <motion.div variants={fadeInUp} className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+          <div className="inline-flex items-center justify-center p-3 bg-gradient-to-br from-red-500/10 to-red-600/10 rounded-2xl mb-6">
+            <IconAlertTriangle className="w-8 h-8 text-red-500" stroke={1.5} />
+          </div>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-600">
             Neyi Çözüyoruz?
           </h2>
-          <p className="text-gray-600 text-lg md:text-xl">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
             Kafe ve restoranların dijital dönüşümünü hızlandırıyor, müşteri deneyimini
             iyileştiriyoruz.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           {/* User Problems */}
-          <motion.div variants={fadeInUp}>
-            <div className="flex items-center gap-4 mb-12">
-              <div className="p-4 rounded-2xl bg-red-50/50">
-                <IconUsers className="w-8 h-8 text-red-500" stroke={1.5} />
+          <motion.div variants={fadeInUp} className="bg-white/50 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-gray-100/50 shadow-lg">
+            <div className="flex items-center gap-4 mb-8 sm:mb-12">
+              <div className="p-3 sm:p-4 rounded-2xl bg-red-50">
+                <IconUsers className="w-6 sm:w-8 h-6 sm:h-8 text-red-500" stroke={1.5} />
               </div>
-              <h3 className="text-2xl font-bold text-red-500">
+              <h3 className="text-xl sm:text-2xl font-bold text-red-500">
                 Kullanıcıların Sorunları
               </h3>
             </div>
-            <div className="space-y-8">
+            <div className="space-y-6 sm:space-y-8">
               {userProblems.map((problem, index) => (
                 <motion.div
                   key={index}
@@ -112,17 +115,17 @@ const ProblemSection = () => {
                   transition={{ type: "spring", stiffness: 300 }}
                 >
                   <div className={cn(
-                    "p-3 rounded-xl transition-all duration-300",
+                    "p-2.5 sm:p-3 rounded-xl transition-all duration-300",
                     problem.bgColor,
                     "group-hover:scale-110"
                   )}>
-                    <problem.icon className={cn("w-6 h-6", problem.iconColor)} stroke={1.5} />
+                    <problem.icon className={cn("w-5 sm:w-6 h-5 sm:h-6", problem.iconColor)} stroke={1.5} />
                   </div>
                   <div>
-                    <h4 className="text-lg font-medium text-gray-900 mb-1">
+                    <h4 className="text-base sm:text-lg font-medium text-gray-900 mb-1">
                       {problem.title}
                     </h4>
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-sm sm:text-base text-gray-600">
                       {problem.description}
                     </p>
                   </div>
@@ -132,16 +135,16 @@ const ProblemSection = () => {
           </motion.div>
 
           {/* Business Problems */}
-          <motion.div variants={fadeInUp}>
-            <div className="flex items-center gap-4 mb-12">
-              <div className="p-4 rounded-2xl bg-blue-50/50">
-                <IconBuildingStore className="w-8 h-8 text-blue-500" stroke={1.5} />
+          <motion.div variants={fadeInUp} className="bg-white/50 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-gray-100/50 shadow-lg">
+            <div className="flex items-center gap-4 mb-8 sm:mb-12">
+              <div className="p-3 sm:p-4 rounded-2xl bg-blue-50">
+                <IconBuildingStore className="w-6 sm:w-8 h-6 sm:h-8 text-blue-500" stroke={1.5} />
               </div>
-              <h3 className="text-2xl font-bold text-blue-500">
+              <h3 className="text-xl sm:text-2xl font-bold text-blue-500">
                 İşletmelerin Sorunları
               </h3>
             </div>
-            <div className="space-y-8">
+            <div className="space-y-6 sm:space-y-8">
               {businessProblems.map((problem, index) => (
                 <motion.div
                   key={index}
@@ -151,17 +154,17 @@ const ProblemSection = () => {
                   transition={{ type: "spring", stiffness: 300 }}
                 >
                   <div className={cn(
-                    "p-3 rounded-xl transition-all duration-300",
+                    "p-2.5 sm:p-3 rounded-xl transition-all duration-300",
                     problem.bgColor,
                     "group-hover:scale-110"
                   )}>
-                    <problem.icon className={cn("w-6 h-6", problem.iconColor)} stroke={1.5} />
+                    <problem.icon className={cn("w-5 sm:w-6 h-5 sm:h-6", problem.iconColor)} stroke={1.5} />
                   </div>
                   <div>
-                    <h4 className="text-lg font-medium text-gray-900 mb-1">
+                    <h4 className="text-base sm:text-lg font-medium text-gray-900 mb-1">
                       {problem.title}
                     </h4>
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-sm sm:text-base text-gray-600">
                       {problem.description}
                     </p>
                   </div>

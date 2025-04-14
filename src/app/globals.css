@@ -24,6 +24,31 @@
     --input: oklch(0.922 0 0);
     --ring: oklch(0.708 0 0);
     --radius: 0.5rem;
+    --container-padding: 1rem;
+  }
+
+  @screen sm {
+    :root {
+      --container-padding: 2rem;
+    }
+  }
+
+  @screen lg {
+    :root {
+      --container-padding: 4rem;
+    }
+  }
+
+  @screen xl {
+    :root {
+      --container-padding: 5rem;
+    }
+  }
+
+  @screen 2xl {
+    :root {
+      --container-padding: 6rem;
+    }
   }
 
   .dark {
@@ -50,7 +75,39 @@
   * {
     @apply border-border;
   }
+
+  html {
+    @apply antialiased;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground min-h-screen;
+  }
+
+  /* Responsive text utilities */
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-bold;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl lg:text-3xl font-bold;
+  }
+
+  p {
+    @apply text-base md:text-lg;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-container;
   }
 }
