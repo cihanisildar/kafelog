@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/animations";

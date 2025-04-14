@@ -58,7 +58,7 @@ const UniqueValueSection = () => {
             Yerlilik & Özgünlük
           </h2>
           <p className="text-gray-600 text-lg md:text-xl">
-            KafeLog, Türkiye'nin benzersiz yeme-içme kültürünü dijital dünyaya taşıyor.
+            KafeLog, Türkiye&apos;nin benzersiz yeme-içme kültürünü dijital dünyaya taşıyor.
           </p>
         </motion.div>
 

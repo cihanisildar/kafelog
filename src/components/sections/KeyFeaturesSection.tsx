@@ -144,8 +144,8 @@ const KeyFeaturesSection = () => {
           className="mt-20 text-center"
         >
           <p className="text-2xl text-gray-600 font-light italic max-w-4xl mx-auto leading-relaxed">
-            "Her özellik, kullanıcılarımızın ve işletmelerimizin ihtiyaçları düşünülerek tasarlandı.
-            Sürekli gelişen teknolojimizle yeni özellikler eklemeye devam ediyoruz."
+            &ldquo;Her özellik, kullanıcılarımızın ve işletmelerimizin ihtiyaçları düşünülerek tasarlandı.
+            Sürekli gelişen teknolojimizle yeni özellikler eklemeye devam ediyoruz.&rdquo;
           </p>
         </motion.div>
       </motion.div>

@@ -108,7 +108,7 @@ const timelineSteps = [
             <p className="text-muted-foreground">
               Kapsamlı bir dijital pazarlama stratejisi ile platformumuzu
               tanıtacağız. Sosyal medya kampanyaları ve influencer iş birlikleri
-              ile geniş kitlelere ulaşacağız. "Yeni Mekanlar Vitrini"
+              ile geniş kitlelere ulaşacağız. &ldquo;Yeni Mekanlar Vitrini&rdquo;
               özelliğimizle işletmelere özel lansman fırsatları sunacağız.
             </p>
           </div>

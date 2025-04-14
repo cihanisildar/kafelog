@@ -124,7 +124,7 @@ const TargetAudienceSection = () => {
           className="mt-16 text-center"
         >
           <p className="text-2xl text-gray-600 font-light italic max-w-4xl mx-auto">
-            "Her damak tadına, her bütçeye, her yaşam tarzına uygun öneriler"
+            &ldquo;Her damak tadına, her bütçeye, her yaşam tarzına uygun öneriler&rdquo;
           </p>
         </motion.div>
       </motion.div>
