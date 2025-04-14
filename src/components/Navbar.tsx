@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Button } from './ui/button';
 import { IconCoffee } from "@tabler/icons-react";
+import { WaitlistForm } from './WaitlistForm';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -58,13 +59,7 @@ const Navbar = () => {
 
           {/* Waitlist Button - Right Aligned */}
           <div className="hidden md:flex flex-shrink-0">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-6 py-2 rounded-full font-medium hover:from-amber-600 hover:to-amber-700 transition-all duration-300 shadow-md hover:shadow-lg"
-            >
-              Sıraya Katıl
-            </motion.button>
+            <WaitlistForm />
           </div>
 
           {/* Mobile Menu Button */}
@@ -113,9 +108,9 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Button className="w-full mt-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:cursor-pointer px-6 py-2 rounded-full font-medium hover:from-amber-600 hover:to-amber-700 transition-all duration-300 shadow-md hover:shadow-lg">
-              Sıra Bekle
-            </Button>
+            <div className="mt-4">
+              <WaitlistForm />
+            </div>
           </div>
         </motion.div>
       </div>
