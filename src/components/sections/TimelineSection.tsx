@@ -7,9 +7,6 @@ import {
   Rocket,
   Target,
   Users,
-  Store,
-  Building2,
-  ShoppingBag,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -108,7 +105,7 @@ const timelineSteps = [
             <p className="text-muted-foreground">
               Kapsamlı bir dijital pazarlama stratejisi ile platformumuzu
               tanıtacağız. Sosyal medya kampanyaları ve influencer iş birlikleri
-              ile geniş kitlelere ulaşacağız. &ldquo;Yeni Mekanlar Vitrini&rdquo;
+              ile geniş kitlelere ulaşacağız. &quot;Yeni Mekanlar Vitrini&quot;
               özelliğimizle işletmelere özel lansman fırsatları sunacağız.
             </p>
           </div>
@@ -154,7 +151,7 @@ export function TimelineSection() {
             </h2>
           </div>
           <p className="max-w-[700px] text-muted-foreground">
-            KafeLog'un gelişim sürecini ve önemli kilometre taşlarını takip
+            KafeLog&apos;un gelişim sürecini ve önemli kilometre taşlarını takip
             edin. Her aşamada kullanıcı odaklı ve yenilikçi çözümler sunmayı
             hedefliyoruz.
           </p>
@@ -168,7 +165,7 @@ export function TimelineSection() {
           {/* Animated background gradients */}
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-primary/10 to-transparent rounded-3xl" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,theme(colors.primary.100/0.1),transparent_50%)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,theme(colors.primary.200/0.1),transparent_50%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,theme(colors.primary.200),transparent_50%)]" />
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
