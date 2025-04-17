@@ -19,7 +19,7 @@ export default function Home() {
       {/* Hero Section */}
       <BackgroundLines className="flex items-center justify-center w-full flex-col px-4 min-h-[90vh] md:min-h-[80vh]">
         <div className="max-w-4xl mx-auto w-full space-y-6 md:space-y-8">
-          <h1 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl relative z-20 font-bold tracking-tight leading-tight">
+          <h1 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
             Her Kesimin <br className="sm:hidden" /> Lezzet Pusulası
           </h1>
           <p className="max-w-xl mx-auto text-base sm:text-lg text-neutral-700 dark:text-neutral-400 text-center leading-relaxed">
