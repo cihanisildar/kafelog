@@ -1,14 +1,11 @@
 "use client";
 
 import {
-  Coffee,
   Code2,
   Smartphone,
   Heart,
   Database,
-  Cloud,
   Layout,
-  Cpu,
   Brain,
 } from "lucide-react";
 
@@ -27,7 +24,7 @@ export default function AboutPage() {
               Geliştirici Ekibimiz
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Modern teknolojiler ve yapay zeka çözümleriyle KafeLog'u geliştiren ekibimiz
+              Modern teknolojiler ve yapay zeka çözümleriyle KafeLog&apos;u geliştiren ekibimiz
             </p>
           </section>
 
