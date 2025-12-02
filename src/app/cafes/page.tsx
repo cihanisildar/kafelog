@@ -4,7 +4,6 @@ import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { MapPin, Star, Coffee, Search } from "lucide-react";
-import Image from "next/image";
 import { useBusinesses } from "@/hooks/useBusinesses";
 
 export default function CafesPage() {

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Tag, Clock, Star, MapPin, Coffee, TrendingUp, Sparkles, Loader2, AlertCircle } from "lucide-react";
+import { Tag, Clock, Star, Coffee, TrendingUp, Sparkles, Loader2, AlertCircle } from "lucide-react";
 import { useCampaigns } from "@/hooks/useCampaigns";
 import { PerformanceDebug } from "@/components/PerformanceDebug";
 

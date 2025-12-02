@@ -6,7 +6,6 @@ import Footer from "@/components/Footer";
 import {
   Calendar,
   Clock,
-  MapPin,
   Users,
   Coffee,
   Music,
